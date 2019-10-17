@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+
+@media screen and (max-width:1450px){
+    #menu li a {font-size:2.5rem;}
+}
+
+@media screen and (max-width:1200px){
+    .pc {display:none;}
+    .mobile {display:block;}
+}

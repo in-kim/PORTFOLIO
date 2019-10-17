@@ -1,0 +1,109 @@
+@charset "utf-8";
+@import "reset.css";
+/* Custom CSS
+ * --------------------------------------- */
+
+.page_wrap{
+    position:absolute;
+    width:100%;
+    height:100%;
+    padding-left:11.458%; 
+    box-sizing:border-box;
+    padding-top:5.2%;    
+}
+.page_wrap .title > img {width:100%;}
+.page_wrap .con_center {width:70.5%; margin:0 auto;}
+
+.half__box { width:50%; float:left;}
+.clear {clear:both;}
+
+/*button*/
+.btn_move {position:absolute; width:3%; top:50%; margin-top:-3.6%;}
+.btn_move.prev { left:13%; background:url('/commons/images/icon/icon_left_arrow02.png') no-repeat;}
+.btn_move.next { right:5%; background:url('/commons/images/icon/icon_right_arrow02.png') no-repeat;}
+/* Menu
+ * --------------------------------------- */
+#menu{position:fixed;top:0;left:0;width: 11.458%; height:100%;z-index: 99999;padding: 0;margin:0; background-color:#333333;}
+#menu li {color: #fff; text-align:center; font-size:3rem;}
+#menu li.logo {display:block; padding:50px 0; border-bottom:1px solid #515151;}
+#menu li.logo > img {width:49.54%}
+#menu li a{text-align:left; width:80%; border-top:1px solid #42494a; border-bottom:1px solid #1e2325; display:inline-block;padding:30px 0; font-size:inherit; color:inherit;}
+#menu li:nth-child(2) a {border-top:0;}
+#menu li:nth-child(5) a {border-bottom:0;}
+#menu li.active a, #menu li:hover a{color: #ffe8a0;}
+#menu li.copyright {position:absolute; bottom:30px; left:26px; text-align:left; color:#fff; font-size:12px; }
+
+/* intro */
+.intro_area{background:url('/commons/images/section01_back.png') no-repeat right; background-size:88.542%;}
+.intro_area > img.kim_logo {width:26.4705%; position:absolute; top:50%; left:50%; margin:-12.98% 0 0 -11.71%;}
+.intro_area > .right_arrow {width:3%; position:absolute; top:50%; left:50%; z-index:2; margin:-3.6% 0 0 30%; background:url('') no-repeat;}
+.intro_area > .right_arrow > img {width:100%;}
+
+.cover {position:absolute; width:100%; height:100%; background:#000; opacity:0.8; top:0; left:0; z-index:-1;}
+
+
+/*project_area*/
+.project_area {background:url('/commons/images/section02_back.png') no-repeat right;background-size:88.542%;}
+.project_area .project_slide {width:100%; height:700px; position:relative;}
+.project_area .swiper-container {width: 100%; height: 638px; position:static; background:url('/commons/images/section02_slider_back.png') no-repeat top center rgba(0,0,0,0.5); background-size:100%;box-sizing:border-box; padding-top:10%;}
+.project_area .swiper-slide {
+    height:370px;
+    margin-top:60px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+}
+.project_area .swiper-slide.swiper-slide-active{margin-top:0;}
+.project_area .swiper-container-horizontal > .swiper-scrollbar {height:30px; bottom:63px;}
+
+.project_area .swiper-slide .project_img_area {width:100%; height:250px;}
+.project_area .swiper-slide .project_img_area > img {width:100%; height:250px;}
+.project_area .swiper-slide .project_txt_area {width:100%; min-height:120px; background-color:#454443; color:#fff; padding:20px 30px; box-sizing:border-box; text-align:left; position:relative;}
+.project_area .swiper-slide .project_txt_area .title {font-size:18px; color:inherit; padding-top:12px; background:url('/commons/images/bul/bul_line02.png') no-repeat top left; font-weight:700; margin-bottom:10px;}
+.project_area .swiper-slide .project_txt_area > p {font-size:14px; color:inherit; font-weight:500; margin-bottom:10px;}
+.project_area .swiper-slide .project_txt_area > p.link {font-size:12px; color:inherit; word-break:break-all;}
+.project_area .swiper-slide .project_txt_area > .btn_plus{width:25px; height:25px; position:absolute; right:30px; top:20px; background:url('/commons/images/icon/icon_plus.png') no-repeat;}
+
+/*profile_area*/
+.profile_area{background:url('/commons/images/section03_back.png') no-repeat right; background-size:88.542%;}
+
+
+.profile_area .KDI_info {float:left; height:730px; box-sizing:border-box; margin-top:60px; position:relative; background-color:#fff;}
+.profile_area .KDI_info .sub_title {font-size:18px; color:#343434; padding-top:15px; background:url('/commons/images/bul/bul_line01.png') no-repeat top left; margin-bottom:10px;}
+.profile_area .KDI_info p {font-size:14px; color:#343434;}
+.profile_area .KDI_info ul li {font-size:14px; color:#343434; margin-top:10px;}
+.profile_area .KDI_info ul li:first-child {margin-top:0;}
+.profile_area .KDI_info.left__box {width:37.5%; padding:0; margin-right:8.8%}
+.profile_area .KDI_info.left__box > article {padding:30px 6.6% 30px 6.6%}
+.profile_area .KDI_info.left__box > img {width:100%; }
+.profile_area .KDI_info.right__box {width:53.7%; padding:30px 2.4% 30px 2.4%}
+.profile_area .KDI_info.right__box > div {overflow:hidden;}
+ 
+/*contact_area*/
+.contact_area {background:url('/commons/images/section04_back.png') no-repeat right;  background-size:88.542%;}
+.contact_area form > input {width:50%; height:60px; line-height:60px; padding:0 27px; border:1px solid #9399a3; box-sizing:border-box; background-color:rgba(255,255,255,0.3); font-size:16px; color:#fff; font-weight:700; display:block; margin:0 auto; margin-bottom:30px;}
+.contact_area form > input::-webkit-input-placeholder { /* 크롬 4–56 */font-size:16px; color:#fff; font-weight:700;}
+.contact_area form > input:-moz-placeholder { /* 파이어폭스 4–18 */font-size:16px; color:#fff; font-weight:700;}
+.contact_area form > input::-moz-placeholder { /* 파이어폭스 19–50 */font-size:16px; color:#fff; font-weight:700;}
+.contact_area form > input:-ms-input-placeholder { /* 인터넷 익스플로러 10+ */font-size:16px; color:#fff; font-weight:700;}
+.contact_area form > input::placeholder { /* 파이어폭스 51+, 크롬 57+ */font-size:16px; color:#fff; font-weight:700;}
+.contact_area form > textarea {resize:none; width:50%; height:270px; padding:25px 27px; border:1px solid #9399a3; box-sizing:border-box; background-color:rgba(255,255,255,0.3); font-size:16px; color:#fff; font-weight:700; display:block; margin:0 auto;}
+.contact_area form > textarea::placeholder {font-size:16px; color:#fff; font-weight:700;}
+
+.pp-easing {
+    -webkit-transition: all 1500ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
+    -moz-transition: all 1500ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
+    -o-transition: all 1500ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
+    transition: all 1500ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
+    -webkit-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
+    -moz-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
+    -o-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
+    transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
+}
+
+/*kdi 전용 테이블*/
+.back_table {width:90%; margin:0 auto; border-top:3px solid #000; margin-top:50px;}
+.back_table > table {border-collapse: collapse;}
+.back_table thead tr th {background-color:#036; color:#fff; font-size:15px; text-align:center; padding:15px 10px;}
+.back_table tbody tr td {background-color:#fff; color:#333; font-size:15px; text-align:center; padding:15px 10px;  border-bottom:1px solid #ddd;}
+.back_table tbody tr:nth-child(2n+1) td {background-color:#f3f6f7}
